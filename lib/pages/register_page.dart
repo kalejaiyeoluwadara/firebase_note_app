@@ -84,7 +84,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 SizedBox(height: 50), // Ensure some top spacing
                 Center(
                   child: Icon(
-                    Icons.lock,
+                    Icons.person,
                     size: 40,
                   ),
                 ),
@@ -118,34 +118,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   text: 'Sign Up',
                   onTap: signUp,
                 ),
-                SizedBox(height: 25),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Divider(
-                          thickness: 0.5,
-                          color: Colors.grey[400],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                        child: Text(
-                          'Or continue with',
-                          style: TextStyle(color: Colors.grey[700]),
-                        ),
-                      ),
-                      Expanded(
-                        child: Divider(
-                          thickness: 0.5,
-                          color: Colors.grey[400],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 30),
+                SizedBox(height: 15),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
