@@ -85,7 +85,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 Center(
                   child: Icon(
                     Icons.person,
-                    size: 40,
+                    size: 80,
                   ),
                 ),
                 SizedBox(height: 50),

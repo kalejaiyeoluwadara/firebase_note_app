@@ -59,7 +59,9 @@ class _LoginPageState extends State<LoginPage> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('OK'),
+              child: const Text(
+                'OK',
+              ),
             ),
           ],
         );
@@ -82,7 +84,7 @@ class _LoginPageState extends State<LoginPage> {
                 Center(
                   child: Icon(
                     Icons.person,
-                    size: 100,
+                    size: 80,
                   ),
                 ),
                 SizedBox(height: 50),
