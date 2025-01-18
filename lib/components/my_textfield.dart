@@ -35,11 +35,13 @@ class _MyTextfieldState extends State<MyTextfield> {
         decoration: InputDecoration(
           hintText: widget.hintText,
           hintStyle: TextStyle(color: Colors.grey[500]),
-          enabledBorder: const OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.white),
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(color: Colors.white),
+            borderRadius: BorderRadius.circular(12.0),
           ),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.grey.shade400),
+            borderRadius: BorderRadius.circular(12.0),
           ),
           fillColor: Colors.grey.shade200,
           filled: true,

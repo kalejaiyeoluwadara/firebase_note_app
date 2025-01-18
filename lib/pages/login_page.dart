@@ -76,21 +76,23 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.grey[100],
         body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(16.0), // Add some padding for spacing
+            padding: const EdgeInsets.all(10.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(height: 50), // Ensure some top spacing
                 Center(
                   child: Icon(
                     Icons.person,
                     size: 80,
                   ),
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 10),
                 Text(
-                  'Welcome back you\'ve been missed.',
-                  style: TextStyle(color: Colors.grey[600], fontSize: 16),
+                  'M I N I M A L',
+                  style: TextStyle(
+                      color: Colors.grey[600],
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500),
                   textAlign: TextAlign.center, // Center align the text
                 ),
                 SizedBox(height: 25),
@@ -107,12 +109,12 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 12, right: 18.0),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Text(
                         'Forgot password',
-                        style: TextStyle(color: Colors.blue),
+                        style: TextStyle(color: Colors.grey[500]),
                       ),
                     ],
                   ),
@@ -131,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
                       'Not a member?',
                       style: TextStyle(color: Colors.grey[700]),
                     ),
-                    SizedBox(width: 10),
+                    SizedBox(width: 3),
                     GestureDetector(
                       onTap: () {
                         // Handle navigation to the registration page
@@ -141,7 +143,8 @@ class _LoginPageState extends State<LoginPage> {
                         child: Text(
                           'Register Now',
                           style: TextStyle(
-                              color: Colors.blue, fontWeight: FontWeight.bold),
+                              color: Colors.grey[800],
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                     )
