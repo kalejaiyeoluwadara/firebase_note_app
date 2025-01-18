@@ -1,5 +1,9 @@
+import 'package:firebase/auth/auth.dart';
 import 'package:firebase/firebase_options.dart';
 import 'package:firebase/pages/login_or_register.dart';
+import 'package:firebase/pages/profile_page.dart';
+import 'package:firebase/pages/users_page.dart';
+import 'package:firebase/pages/wall_page.dart';
 import 'package:firebase/theme/dark_mode.dart';
 import 'package:firebase/theme/light_mode.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -18,8 +22,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Wall App',
-        // theme: lightTheme,
         debugShowCheckedModeBanner: false,
-        home: const LoginOrRegister());
+        routes: {
+          '/users_page': (context) => const UsersPage(),
+          '/profile_page': (context) => const ProfilePage(),
+          '/home_page': (context) => const WallPage(),
+          '/login_or_register_page': (context) => const LoginOrRegister(),
+        },
+        home: const AuthPage());
   }
 }
